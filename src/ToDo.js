@@ -1,5 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 
-const ToDo = ({ task }) => <li>{task}</li>;
+const ToDo = ({ task, removeToDo }) => (
+  <li>
+    {task}
+    <button onClick={removeToDo}>REMOVE</button>
+  </li>
+);
 
 export default ToDo;
